@@ -1,0 +1,134 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 13.04.2 ] */
+
+/* [wxMaxima: input   start ] */
+u = 2;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+u;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+u(x) = 3;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+u(x):= x+1;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+u(3);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+u(r, z) := A*r+B*(r^3-3/2.0-4*r*z^2)+C*(r*z^4-3/2.0*r^3*z^2+1/8.0*r^5);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+u(0.5, 1);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+w(r, z) := -2*A*z + 8/3.0*B*(z^3-3/2.0*r^2*z)-2/5.0*C*(z^5-5*r^2*z^3+15/8.0*r^4*z);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+srr(r, z) := 2/3.0*(-0.5+A+B*(3*z^2-4*z^2)+C*(z^4-9/2.0*r^2*z^2+5/8.0*r^4));
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+linsolve([u(0.5, 1)=0, w(0.5, 1)=-1, srr(0.5, 0)=0], [A, B, C]);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+if numer#false then numer:false else numer:true;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+linsolve([u(0.5, 1)=0, w(0.5, 1)+1=0, srr(0.5, 0)=0], [A, B, C]);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+q=3;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+q;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+q:=2;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+kill(q);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+q:=2;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+qwert:=3;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+X:=1;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+X:1;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+X;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+kill(X);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+X;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+A:0.51735628991947;B:0.03499028047764;C:-0.44432102193835;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+u(0.5, 1);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+plot2d([u(r, 1)], [r,0,0.5],
+ [plot_format, gnuplot], [gnuplot_term, png], [gnuplot_out_file, "graph3.png"])$
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+kill(A);kill(B);kill(C);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+[];
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+[1, 2 , 3];
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+A:[1, 2, 3];
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+result:linsolve([u(0.5, 1)=0, w(0.5, 1)+1=0, srr(0.5, 0)=0], [A, B, C]);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+result[1];
+/* [wxMaxima: input   end   ] */
+
+/* Maxima can't load/batch files which end with a comment! */
+"Created with wxMaxima"$
